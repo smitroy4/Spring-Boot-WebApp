@@ -1,0 +1,23 @@
+<%@page language="java" %>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/style.css">
+        <title>Smit's TomCat</title>
+        <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Smit's WebApp</h2>
+
+            <form action="adddeveloper">
+                <label for="did">Enter developer Id :</label>
+                <input type="text" id="did" name="did"><br>
+
+                <label for="dname">Enter developer Name :</label>
+                <input type="text" id="dname" name="dname"><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

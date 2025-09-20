@@ -1,116 +1,100 @@
+/* style.css */
+
+/* Import a classy Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;500;700&display=swap');
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #FAFAFA;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(270deg, #89f7fe, #66a6ff, #a1c4fd, #fbc2eb);
+    background-size: 800% 800%;
+    animation: aurora 20s ease infinite;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2d2d2d;
+}
+
+/* Glowing card */
+.container {
+    background: rgba(255, 255, 255);
+    padding: 3rem;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(173, 216, 230, 0.7), 0 0 60px rgba(255, 255, 255, 0.9);
     text-align: center;
-    padding: 50px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
+/* Headings with heavenly vibes */
 h2 {
-    color: #795548;
-    margin-bottom: 30px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #3a6073;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
 }
 
-form {
-    background-color: #FFFFFF;
-    padding: 30px;
-    border-radius: 4px;
-    display: inline-block;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    max-width: 400px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 20px;
+/* Labels */
+label {
+    display: block;
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
 }
 
-input[type="text"], input[type="submit"] {
-    border: 1px solid #E0E0E0;
-    border-radius: 4px;
-    padding: 10px 15px;
-    margin: 10px 0;
-    width: calc(100% - 30px);
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
+/* Inputs */
 input[type="text"] {
-    background-color: #fff;
+    padding: 0.6rem 0.8rem;
+    width: 100%;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    background: #f8fafc;
+    font-size: 0.95rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-input[type="submit"] {
-    background-color: #795548;
-    color: white;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
+input[type="text"]:focus {
     outline: none;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    border-color: #60a5fa;
+    background: #ffffff;
+}
+
+/* Submit button */
+input[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 0.7rem;
+    background: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #5d4037;
+    background: #2563eb;
 }
 
-input[type="submit"]:focus {
-    box-shadow: 0 0 8px rgba(121, 85, 72, 0.6);
-}
-
-label {
-    font-size: 18px;
-    color: #795548;
-    font-weight: normal;
-    margin: 15px 0 5px;
-}
-
-/* Ripple Effect */
-@keyframes ripple {
-    0% {
-        transform: scale(0);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(4);
-        opacity: 0;
-    }
-}
-
-input[type="submit"]::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    transform: scale(10,10);
-    opacity: 0;
-    transition: transform .5s, opacity 1s;
-}
-
-input[type="submit"]:active::after {
-    transform: scale(0,0);
-    opacity: .2;
-    transition: 0s;
-}
-
-p {
-    color: #333;
-    font-size: 24px;
-    line-height: 1.6;
-}
-
-.result-container {
-    background-color: #FFFFFF;
-    padding: 30px;
-    border-radius: 4px;
-    display: inline-block;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+/* Result page */
+.result-box {
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
     max-width: 400px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 20px;
+}
+
+.result-box h2 {
+    color: #2563eb;
+    margin: 0;
+    font-size: 1.4rem;
 }
