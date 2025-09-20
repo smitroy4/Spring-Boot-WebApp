@@ -1,6 +1,3 @@
-/* style.css */
-
-/* Import a classy Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;500;700&display=swap');
 
 body {
@@ -27,7 +24,7 @@ body {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Headings with heavenly vibes */
+/* Headings */
 h2 {
     font-family: 'Great Vibes', cursive;
     font-size: 3rem;
@@ -83,18 +80,56 @@ input[type="submit"]:hover {
     background: #2563eb;
 }
 
-/* Result page */
+/* Result Page Styling */
 .result-box {
-    background: #ffffff;
-    padding: 1.5rem 2rem;
-    border-radius: 16px;
-    border: 1px solid #e2e8f0;
+    background: #ffffffee;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     text-align: center;
-    max-width: 400px;
+    max-width: 500px;
+    margin: auto;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-.result-box h2 {
-    color: #2563eb;
-    margin: 0;
-    font-size: 1.4rem;
+.result-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
 }
+
+/* Fancy Table */
+.fancy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.fancy-table th {
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    color: white;
+    text-align: left;
+    padding: 0.8rem 1rem;
+    border-radius: 10px 0 0 10px;
+    width: 40%;
+}
+
+.fancy-table td {
+    background: #f9f9f9;
+    padding: 0.8rem 1rem;
+    border-radius: 0 10px 10px 0;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Welcome Message */
+.welcome-msg {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4a5568;
+    margin-top: 1rem;
+}
+

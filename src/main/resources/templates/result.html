@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Thymeleaf Result</title>
+    <link rel="icon" type="image/x-icon"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <h2 th:text="'Welcome to the ' + ${course} + ' World'"></h2>
+    <p th:text="'Result is : ' + ${developer}" class="result"></p>
+</div>
+</body>
+</html>

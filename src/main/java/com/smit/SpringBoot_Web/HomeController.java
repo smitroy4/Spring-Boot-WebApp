@@ -2,6 +2,7 @@ package com.smit.SpringBoot_Web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -22,5 +23,9 @@ public class HomeController {
     @RequestMapping("adddeveloper")
     public String adddeveloper(Developer developer){
         return "result";
+    }
+    @ModelAttribute("course")
+    public String coursename(){
+        return "Java";
     }
 }
